@@ -124,6 +124,7 @@ a {
     z-index: 1000;
     height: 80px;
     transition: height 1s, background-color 1s;
+    box-shadow: 3px 4px 8px rgba(3,3,3,0.4);
 }
 
 .scrolled {
