@@ -4,6 +4,12 @@ html, body {
     padding: 0;
 }
 
+#nav-bar-text:hover {
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
 li {
     display: inline-flex;
     align-items: center;
@@ -134,8 +140,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: flex-end;  /* Aligns content to the right */
-    margin: auto;
-    margin-right: 14em;
+    margin: 0;
 }
 
 .search-container input[type="text"] {
@@ -149,15 +154,18 @@ input {
     border: none;
     background-color: white;
     cursor: pointer;
-    font-size: 16px;
     margin: 1em;
     border-radius: 10px;
 
 }
 
-/* Optional: Add some hover effect to the button */
+#btn-btn-search {
+    width: auto;
+    height: 35px;
+}
+
 .search-btn:hover {
-    background-color: #e0e0e0;
+    background-color: #818181;
 
 }
 
@@ -165,7 +173,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e9e9e9;
+    background-color: #c0c0c0;
 }
 
 .accom {
@@ -177,7 +185,7 @@ input {
 }
 
 .image-container {
-    background-color: #e9e9e9;
+    background-color: #c0c0c0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -195,12 +203,12 @@ input {
 
 .image-title {
     color: #030303;
-  font-size: 87px;
-  font-family: "Khand";
-  letter-spacing: 10px;
-  line-height: 113px;
-  font-weight: 300;
-  margin-left: .4em;
+    font-size: 87px;
+    font-family: "Khand";
+    letter-spacing: 10px;
+    line-height: 113px;
+    font-weight: 300;
+    margin-left: .4em;
 }
 
 .icon-input {
@@ -223,7 +231,7 @@ input {
 }
 
 
-.hotel-section-container {
+.hotel-section {
     margin: 0 auto;
     height: auto;
     display: flex;
@@ -249,7 +257,7 @@ button {
     flex: 3;
     margin: 1em;
     margin-left: 0;
-    box-shadow: 0px 2px 10px rgba(3,3,3,0.1);
+    box-shadow: 0px 2px 10px rgba(3,3,3,0.4);
     border-radius: 10px;
     padding: 2em;
     display: flex;
@@ -262,12 +270,12 @@ button {
 
 .filters-container {
     width: 18em;
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
     height: auto;
     flex: 1;
     margin: 1em;
     margin-left: 0;
-    box-shadow: 0px 2px 10px rgba(3,3,3,0.1);
+    box-shadow: 0px 2px 10px rgba(3,3,3,0.4);
     border-radius: 10px;
     padding: 2em;
 }
@@ -304,18 +312,20 @@ h3 {
 
 #filter-list {
     list-style-type: none;
-    padding: auto;
-    margin-left: 1em;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 #filter-item {
     font-size: 16px;
     line-height: 1.4;
     position: relative;
-    padding: .5em;
+}
+
+#filter-input {
+    margin: 7px;
 }
 
 input[type="checkbox"] {
@@ -324,9 +334,7 @@ input[type="checkbox"] {
 
 .stars-rating  {
     display: inline-flex; /* Making star ratings side by side */
-    justify-content: flex-start;
     flex-wrap: wrap;
-    padding: 1em;
 }
 
 /* Resetting the appearance of checkboxes (to style them) */
@@ -369,6 +377,17 @@ label {
     text-align: center;
     width: auto;
 }
+
+#results-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 24px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 
 
 

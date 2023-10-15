@@ -70,7 +70,7 @@ function isInViewport(element) {
         if (index1 < localText.length) {
           localContainer.innerHTML += localText[index1];
           index1++;
-          setTimeout(typeLocal, 400); // 200 milliseconds between each letter
+          setTimeout(typeLocal, 400); // 400 milliseconds between each letter
         }
       }
       
@@ -81,9 +81,12 @@ function isInViewport(element) {
           setTimeout(typeTranspo, 200); // 200 milliseconds between each letter
         }
       }
-  
+
+      localContainer.style.visibility = "visible";
+      transpoContainer.style.visibility = "visible";
+
       typeLocal(); // Start typing "Local"
-      typeTranspo(); // Start typing "Transportation"
+      typeTranspo(typeTranspo, 1000); // Start typing "Transportation"
     }
   });
   
