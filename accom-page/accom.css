@@ -211,6 +211,7 @@ input {
 .icon-input .destination-text {
     width: auto;
     box-sizing: border-box;
+    width: 20em;
 }
 
 .icon-input i {
@@ -221,11 +222,16 @@ input {
     pointer-events: none; /* Makes the icon unclickable, letting clicks pass through to the input */
 }
 
+
 .hotel-section-container {
-    margin: 1em;
+    margin: 0 auto;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 100%;
+    flex-direction: column;
 }
 
 h1 {
@@ -240,17 +246,40 @@ button {
 
 .hotel-search {
     height: auto;
+    flex: 3;
+    margin: 1em;
+    margin-left: 0;
+    box-shadow: 0px 2px 10px rgba(3,3,3,0.1);
+    border-radius: 10px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18em;
+    
 }
 
 .filters-container {
-    width: 300px; /* Adjust as per your needs */
+    width: 18em;
     font-family: Arial, sans-serif; 
     height: auto;
+    flex: 1;
+    margin: 1em;
+    margin-left: 0;
+    box-shadow: 0px 2px 10px rgba(3,3,3,0.1);
+    border-radius: 10px;
+    padding: 2em;
 }
 
 .filter-section {
     margin-bottom: 30px; /* Spacing between sections */
     width: auto;
+}
+
+.popular-filters-title {
+    display: flex;
+    justify-content: space-between;
 }
 
 h3 {
@@ -268,7 +297,6 @@ h3 {
     font-size: 14px;
     color: #555;
     cursor: pointer;
-    position: absolute;
     right: 0;
     bottom: 12px;
     text-decoration: underline;
@@ -276,24 +304,29 @@ h3 {
 
 #filter-list {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: auto;
+    margin-left: 1em;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 #filter-item {
-    margin-bottom: 15px;
     font-size: 16px;
     line-height: 1.4;
     position: relative;
+    padding: .5em;
 }
 
 input[type="checkbox"] {
     margin-right: 10px;
 }
 
-.stars-rating #filter-item {
-    display: inline; /* Making star ratings side by side */
-    margin-right: 5px;
+.stars-rating  {
+    display: inline-flex; /* Making star ratings side by side */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 1em;
 }
 
 /* Resetting the appearance of checkboxes (to style them) */
@@ -330,6 +363,11 @@ input[type="checkbox"]:checked:after {
 .stars-rating li:hover, 
 .stars-rating li:hover ~ li {
     background-color: #ccc;
+}
+
+label {
+    text-align: center;
+    width: auto;
 }
 
 
