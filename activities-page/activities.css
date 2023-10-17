@@ -2,7 +2,7 @@ html, body {
     font-family: 'Khand', sans-serif;
     padding: 0;
     margin: 0;
-    width: 100%;
+    overflow-x: hidden;
 }
 
 #nav-bar-text:hover {
@@ -194,7 +194,7 @@ a {
     margin: .5em;
     padding: 1em;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(3,3,3,0.8);
+    box-shadow: 0px 0px 10px rgba(3,3,3,0.2);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -206,9 +206,6 @@ a {
 
 .snorkel {
     background-image: url(../images/snorkel.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .fish {
@@ -233,6 +230,11 @@ a {
 
 .helicopter {
     background-image: url(../images/helicopter.jpg);
+}
+
+.snorkel:hover, .fish:hover, .zip-line:hover, .volcano:hover, .rainforest:hover, .beach:hover, .helicopter:hover {
+    box-shadow: 0px 0px 10px rgba(3,3,3,0.9);
+    cursor: pointer;
 }
 
 p {
@@ -287,7 +289,7 @@ p {
 }
 
 .image-info-container {
-    width: 100%;
+    width: 50%;
     margin-left: 2em;
 }
 
@@ -300,14 +302,14 @@ p {
 }
 
 .main-image img {
-    width: 600px;
+    width: 800px;
     height: 600px;
     border-radius: 10px;
 }
 
 .thumbnails {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     border-radius: 10px;
     cursor: pointer;

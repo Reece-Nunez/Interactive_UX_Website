@@ -121,11 +121,4 @@ window.addEventListener('scroll', () => {
     }
 });
 
-//gallery JS
-function updateImage(element) {
-    const mainImage = document.getElementById('currentImg');
-    const imageInfo = document.getElementById('imageInfo');
-    
-    mainImage.src = element.src;
-    imageInfo.textContent = element.getAttribute('data-info');
-}
+
