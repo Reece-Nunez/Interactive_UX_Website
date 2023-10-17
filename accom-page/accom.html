@@ -106,141 +106,187 @@
         </div>
         <!-- Hotel Section -->
         <div class="hotel-section-container">
-            <div class="hotel-section">
-                <div class="hotel-search">
-                    <h1>Search For A Hotel</h1>
-                    <div class="icon-input destination">
-                        <input type="text" class="destination-text" placeholder="Taniti City, Taniti"/>
-                    </div>
-                    <div class="icon-input check-in-date">
-                        <input type="date" class="destination-text"/>
-                    </div>
-                    <div class="icon-input check-out-date">
-                        <input type="date" class="destination-text"/>
-                    </div>
-                    <div class="icon-input destination">
-                        <input type="number" class="destination-text" placeholder="Number Of Guests"/>
-                    </div>
-                    <div class="submit-button-container">
-                    <button type="button" class="destination-btn">Submit</button>
+            <div id="left-row">
+                <div class="hotel-section">
+                    <div class="hotel-search">
+                        <h1>Search For A Hotel</h1>
+                        <div class="icon-input destination">
+                            <input type="text" class="destination-text" placeholder="Taniti City, Taniti"/>
+                        </div>
+                        <div class="icon-input check-in-date">
+                            <input type="date" class="destination-text"/>
+                        </div>
+                        <div class="icon-input check-out-date">
+                            <input type="date" class="destination-text"/>
+                        </div>
+                        <div class="icon-input destination">
+                            <input type="number" class="destination-text" placeholder="Number Of Guests"/>
+                        </div>
+                        <div class="submit-button-container">
+                        <button type="button" class="destination-btn">Submit</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="filters-container">
-                <!-- Popular Filters -->
-                <div class="filter-section">
-                    <div class="popular-filters-title">
-                        <h3>Popular Filters</h3>
-                        <button id="reset-button">Reset</button>
+                <div class="filters-container">
+                    <!-- Popular Filters -->
+                    <div class="filter-section">
+                        <div class="popular-filters-title">
+                            <h3>Popular Filters</h3>
+                            <button id="reset-button">Reset</button>
+                        </div>
+                        <ul id="filter-list">
+                            <li id="filter-item"><input type="checkbox" id="budget-friendly"><label for="budget-friendly">Budget-Friendly Hotel</label></li>
+                            <li id="filter-item"><input type="checkbox" id="includes-breakfast"><label for="includes-breakfast">Includes Breakfast</label></li>
+                            <li id="filter-item"><input type="checkbox" id="free-shuttle"><label for="free-shuttle">Free shuttle service</label></li>
+                            <li id="filter-item"><input type="checkbox" id="hostel-backpacker"><label for="hostel-backpacker">Hostel/Backpacker</label></li>
+                        </ul>
                     </div>
-                    <ul id="filter-list">
-                        <li id="filter-item"><input type="checkbox" id="budget-friendly"><label for="budget-friendly">Budget-Friendly Hotel</label></li>
-                        <li id="filter-item"><input type="checkbox" id="includes-breakfast"><label for="includes-breakfast">Includes Breakfast</label></li>
-                        <li id="filter-item"><input type="checkbox" id="free-shuttle"><label for="free-shuttle">Free shuttle service</label></li>
-                        <li id="filter-item"><input type="checkbox" id="hostel-backpacker"><label for="hostel-backpacker">Hostel/Backpacker</label></li>
-                    </ul>
-                </div>
-                <!-- Price per night -->
-                <div class="filter-section">
-                    <h3>Price per night</h3>
-                    <ul id="filter-list">
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="under-50"><label for="under-50">Under $50</label></li>
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="50-100"><label for="50-100">$50 to $100</label></li>
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="100-150"><label for="100-150">$100 to $150</label></li>
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="150-above"><label for="150-above">$150 and above</label></li>
-                    </ul>
-                </div>
-                <!-- Guest rating -->
-                <div class="filter-section">
-                    <h3>Guest rating</h3>
-                    <ul id="filter-list">
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="any-rating"><label for="any-rating">Any</label></li>
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="great-rating"><label for="great-rating">Great</label></li>
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="very-good-rating"><label for="very-good-rating">Very good</label></li>
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="satisfactory-rating"><label for="satisfactory-rating">Satisfactory</label></li>
-                    </ul>
-                </div>
-                <!-- Accommodation class -->
-                <div id="filter-section">
-                    <h3>Accommodation class</h3>
-                    <ul class="stars-rating">
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="1-star"><label for="1-star">1★</label></li>
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="2-stars"><label for="2-stars">2★</label></li>
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="3-stars"><label for="3-stars">3★</label></li>
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="4-stars"><label for="4-stars">4★</label></li>
-                        <li id="filter-item"><input id="filter-input" type="checkbox" id="5-stars"><label for="5-stars">5★</label></li>
-                    </ul>
+                    <!-- Price per night -->
+                    <div class="filter-section">
+                        <h3>Price per night</h3>
+                        <ul id="filter-list">
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="under-50"><label for="under-50">Under $50</label></li>
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="50-100"><label for="50-100">$50 to $100</label></li>
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="100-150"><label for="100-150">$100 to $150</label></li>
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="150-above"><label for="150-above">$150 and above</label></li>
+                        </ul>
+                    </div>
+                    <!-- Guest rating -->
+                    <div class="filter-section">
+                        <h3>Guest rating</h3>
+                        <ul id="filter-list">
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="any-rating"><label for="any-rating">Any</label></li>
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="great-rating"><label for="great-rating">Great</label></li>
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="very-good-rating"><label for="very-good-rating">Very good</label></li>
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="satisfactory-rating"><label for="satisfactory-rating">Satisfactory</label></li>
+                        </ul>
+                    </div>
+                    <!-- Accommodation class -->
+                    <div id="filter-section">
+                        <h3>Accommodation class</h3>
+                        <ul class="stars-rating">
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="1-star"><label for="1-star">1★</label></li>
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="2-stars"><label for="2-stars">2★</label></li>
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="3-stars"><label for="3-stars">3★</label></li>
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="4-stars"><label for="4-stars">4★</label></li>
+                            <li id="filter-item"><input id="filter-input" type="checkbox" id="5-stars"><label for="5-stars">5★</label></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- Results Section-->
             <div class="results-section">
-                <label for="sort">Sort by:</label>
-                <select id="sort">
-                <option value="default">Default</option>
-                <option value="ascending">Ascending</option>
-                <option value="descending">Descending</option>
-                </select>
+                <div id="sort-container">
+                    <div id="results-title">Results:</div>
+                    <div id="sort-options">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option value="default">Default</option>
+                            <option value="ascending">Ascending</option>
+                            <option value="descending">Descending</option>
+                        </select>
+                    </div>
+                </div>
                 <ul id="sortable-list">
                     <li id="results-card">
-                        <img id="results-image" src="../images/hotel1.jpg">
                         <div id="results-info">
-                            <div id="results-title">Hotel Apple</div>
-                            <div id="results-rating"></div>
-                            <div id="results-detail"></div>
+                            <img id="results-image" src="../images/hotel1.jpg">
+                            <div id="results-left-row">
+                                <div id="results-title">Hotel Apple</div>
+                                <div id="results-detail">0.5 M from city center<br>
+                                    Free Cancellation<br> Includes Breakfast<br>
+                                    <h6 id="room-name">Comfort Room</h6>
+                                    <p id="commodoties">1 King Size Bed, 1 Bathroom</p>
+                                </div>
+                            </div>
                         </div>
                         <div id="results-price">
-                            <div id="price"></div>
-                            <div id="results-info-from-search"></div>
+                            <div id="results-rating">Excellent<br>
+                                1,920 reviews
+                                <div id="rating">9.6</div>
+                            </div>
+                            <div id="price">$189 per night</div>
+                            <div id="results-info-from-search">3 Nights, 2 Guests</div>
                             <div id="view-options">
                                 <button id="view-button" type="button">View Booking Options</button>
                             </div>
                         </div>
                     </li>
                     <li id="results-card">
-                        <img id="results-image" src="../images/hotel2.jpg">
                         <div id="results-info">
-                            <div id="results-title">Hotel Orange</div>
-                            <div id="results-rating"></div>
-                            <div id="results-detail"></div>
+                            <img id="results-image" src="../images/hotel2.jpg">
+                            <div id="results-left-row">
+                                <div id="results-title">Hotel Orange</div>
+                                <div id="results-detail">0.8 M from city center<br>
+                                    Free Airport Shuttle<br> Includes Breakfast<br>
+                                    <h6 id="room-name">Standard Room</h6>
+                                    <p id="commodoties">1 Queen Size Bed, 1 Bathroom</p>
+                                </div>
+                            </div>
                         </div>
                         <div id="results-price">
-                            <div id="price"></div>
-                            <div id="results-info-from-search"></div>
+                            <div id="results-rating">Good<br>
+                                798 reviews
+                                <div id="rating">8.2</div>
+                            </div>
+                            <div id="price">$260 per night</div>
+                            <div id="results-info-from-search">3 Nights, 2 Guests</div>
                             <div id="view-options">
                                 <button id="view-button" type="button">View Booking Options</button>
                             </div>
                         </div>
                     </li>
                     <li id="results-card">
-                        <img id="results-image" src="../images/hotel3.jpg">
                         <div id="results-info">
-                            <div id="results-title">Hotel Pear</div>
-                            <div id="results-rating"></div>
-                            <div id="results-detail"></div>
+                            <img id="results-image" src="../images/hotel3.jpg">
+                            <div id="results-left-row">
+                                <div id="results-title">Hotel Banana</div>
+                                <div id="results-detail">2.0 M from downtown<br>
+                                    Complimentary breakfast<br>
+                                    <h6 id="room-name">Deluxe Room</h6>
+                                    <p id="commodoties">1 King Size Bed, 1 Bathroom</p>
+                                </div>
+                            </div>
                         </div>
                         <div id="results-price">
-                            <div id="price"></div>
-                            <div id="results-info-from-search"></div>
+                            <div id="results-rating">Excellent<br>
+                                2,200 reviews
+                                <div id="rating">9.4</div>
+                            </div>
+                            <div id="price">$420 per night</div>
+                            <div id="results-info-from-search">3 Nights, 2 Guests</div>
                             <div id="view-options">
                                 <button id="view-button" type="button">View Booking Options</button>
                             </div>
                         </div>
                     </li>
                     <li id="results-card">
-                        <img id="results-image" src="../images/hotel4.jpg">
                         <div id="results-info">
-                            <div id="results-title">Hotel Mango</div>
-                            <div id="results-rating"></div>
-                            <div id="results-detail"></div>
+                            <img id="results-image" src="../images/hotel4.jpg">
+                            <div id="results-left-row">
+                                <div id="results-title">Hotel Mango</div>
+                                <div id="results-detail">2.2 M from downtown<br>
+                                    Budget friendly<br> Includes Breakfast<br>
+                                    <h6 id="room-name">Standard room</h6>
+                                    <p id="commodoties">1 queen bed, 1/2 Bathroom</p>
+                                </div>
+                            </div>
                         </div>
                         <div id="results-price">
-                            <div id="price"></div>
-                            <div id="results-info-from-search"></div>
+                            <div id="results-rating">Average<br>
+                                850 reviews
+                                <div id="rating">6.4</div>
+                            </div>
+                            <div id="price">$45 per night</div>
+                            <div id="results-info-from-search">3 Nights, 2 Guests</div>
                             <div id="view-options">
                                 <button id="view-button" type="button">View Booking Options</button>
                             </div>
                         </div>
                     </li>
+                    <div id="result-numbers">
+                    <p id="page-number">1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p>
+                    </div>
                 </ul>
             </div>
         </div>
