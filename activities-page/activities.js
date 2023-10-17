@@ -122,3 +122,30 @@ window.addEventListener('scroll', () => {
 });
 
 
+// gallery function
+function updateImage(element) {
+    const mainImage = document.getElementById('current-img');
+    const imageTitle = document.getElementById('image-title');
+    const imageInfo = document.getElementById('image-info');
+
+    // Store the current main image attributes
+    const mainImageSrc = mainImage.src;
+    const mainImageTitle = imageTitle.textContent;
+    const mainImageInfo = imageInfo.textContent;
+
+    // Update the main image with the clicked thumbnail's attributes
+    mainImage.src = element.src;
+    imageTitle.textContent = element.getAttribute('image-title');
+    imageInfo.textContent = element.getAttribute('image-info');
+
+    // Update the clicked thumbnail with the original main image attributes
+    element.src = mainImageSrc;
+    element.setAttribute('image-title', mainImageTitle);
+    element.setAttribute('image-info', mainImageInfo);
+}
+
+
+
+
+
+

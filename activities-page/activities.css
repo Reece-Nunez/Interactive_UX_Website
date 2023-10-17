@@ -295,10 +295,13 @@ p {
 
 #image-title {
     font-weight: 400;
+    font-size: 2.4em;
 }
 
 #image-info {
     color: black;
+    width: 60%;
+    font-size: 1.2em;
 }
 
 .main-image img {
@@ -314,12 +317,18 @@ p {
     border-radius: 10px;
     cursor: pointer;
     margin: 2em;
+    overflow: hidden;
 }
 
 .thumbnails img {
     width: 271px;
     height: 201px;
     border-radius: 10px;
+    transition: transform .4s ease;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
 }
 
 
