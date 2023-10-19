@@ -340,7 +340,7 @@ span:nth-child(2) {
 .carousel {
     display: flex;
     align-items: center;
-    height: 630px;
+    height: 460px;
     width: 100%;
     justify-content:  center;
 }
@@ -390,17 +390,199 @@ span:nth-child(2) {
     width: 200px;
     border-radius: 10px;
     transition: all .2s ease-in-out;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .img-large {width: 200px !important; height: 380px !important;}
 .img-medium {width: 170px !important; height: 300px !important;}
 .img-small {width: 100px !important; height: 200px !important;}
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.btn-reserve {
+    font-family: 'Khand', sans-serif;
+    padding: 0px 8px;
+    border: 0;
+    border-radius: 25px;
+    background-color: #030303;
+    color: white;
+    letter-spacing: 1px;
+    height: 30px;
+    font-size: 1em;
+}
 
 
+.btn-reserve:hover {
+    cursor: pointer;
+    background-color: #5a5a5a;
+    transform: scale(1.1);
+}
 
 
+#btn-restaurant-search {
+    background-color: #030303;
+    color: white;
+    font-family: 'Khand';
+    padding: 0 8px;
+    height: 20px;
+    width: 80px;
+    outline: none;
+    border: 0;
+}
 
+#btn-restaurant-search:hover {
+    cursor: pointer;
+    background-color: #5a5a5a;
+}
+
+.restaurant-search-container {
+    display: flex;
+    align-items: center;
+    margin: 2em;
+    border-radius: 24px;
+    margin-left: 0;
+}
+
+
+.btn-top-rest {
+    margin: 2em;
+    margin-left: 0;
+    font-family: 'Khand';
+    height: 40px;
+    width: 100px;
+    padding: 0 8px;
+    border-radius: 20px;
+    border: 1px solid #030303;
+    font-size: 1em;
+    outline: none;
+}
+
+.btn-top-rest:hover {
+    cursor: pointer;
+    background-color: #818181;
+    color: white;
+    box-shadow: 3px 4px 5px rgba(3,3,3,0.8);
+}
+
+.cat-checkboxes {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2em;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+/* Hide default checkbox */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+
+  /* Custom checkbox */
+.custom-checkbox label {
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid #5a5a5a;
+    position: relative;
+    cursor: pointer;
+    margin: 3em;
+    margin-left: 0;
+
+}
+
+  /* Checkmark for selected checkbox */
+.custom-checkbox input[type="checkbox"]:checked + label::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    line-height: 1;
+}
+
+.star-rating {
+    display: flex;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none" stroke="black"><path d="M12 2l3.09 9.26h9.82l-7.91 5.73l2.89 8.71l-7.9-5.77l-7.9 5.77l2.89-8.71l-7.91-5.73h9.82z"></path></svg>') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    margin: .2em;
+}
+
+.star.active {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"><path d="M12 2l3.09 9.26h9.82l-7.91 5.73l2.89 8.71l-7.9-5.77l-7.9 5.77l2.89-8.71l-7.91-5.73h9.82z"></path></svg>') no-repeat center;
+    background-size: contain;
+}
+
+.recommend {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tanitian-img {
+    background-image: url(../images/tanitian.jpg);
+}
+
+.lagoon-img {
+    background-image: url(../images/lagoon.jpg);
+}
+
+.palmier-img {
+    background-image: url(../images/palmier.jpg);
+}
+
+.azure-img {
+    background-image: url(../images/azure.jpg);
+}
+
+.tanitian-img, .lagoon-img , .palmier-img, .azure-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 185px;
+    height: 125px;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: transform .3s ease;
+}
+
+.tanitian-img:hover,.lagoon-img:hover,.palmier-img:hover,.azure-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+h5 {
+    margin-bottom: 0;
+}
+
+.bottom-container {
+    margin-left: 3em;
+    margin-bottom: 3em;
+}
+
+#lower-hr {
+    width: 80%;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    height: 1px;
+    color: #f0f0f0;
+    opacity: 0.6;
+}
 
 
 

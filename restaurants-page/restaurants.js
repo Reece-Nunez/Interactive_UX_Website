@@ -49,3 +49,26 @@ rightArrow.addEventListener('click', function() {
 // Initial adjustment
 adjustImageSizes();
 
+//rating system
+document.addEventListener("DOMContentLoaded", function() {
+    const stars = document.querySelectorAll(".star");
+
+    stars.forEach(star => {
+        star.addEventListener("click", fillStars);
+    });
+
+    function fillStars(event) {
+        const clickedStarValue = parseInt(event.currentTarget.getAttribute("data-value"));
+
+    stars.forEach(star => {
+        const starValue = parseInt(star.getAttribute("data-value"));
+        if (starValue <= clickedStarValue) {
+            star.classList.add("active");
+        } else {
+            star.classList.remove("active");
+        }
+    });
+    }
+});
+
+
