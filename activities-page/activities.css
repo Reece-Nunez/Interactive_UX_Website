@@ -8,6 +8,7 @@ html, body {
 #nav-bar-text:hover {
     font-weight: 500;
     text-decoration: underline;
+    cursor: pointer;
     text-decoration-color: #ffffff;
 }
 
@@ -116,7 +117,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: #818181;
-    position: sticky;
+    position: sticky !important;
     top: 0;
     z-index: 1000;
     height: 80px;
@@ -329,6 +330,7 @@ p {
 
 .thumbnails img:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .book-button-container {
@@ -364,6 +366,7 @@ p {
     outline-offset: 20px;
     text-shadow: 5px 5px 8px #000000;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 
