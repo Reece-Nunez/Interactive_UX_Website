@@ -1,0 +1,276 @@
+html, body {
+    font-family: 'Khand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-bar-text:hover {
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+li {
+    display: inline-flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 300;
+    align-content: center;
+    text-transform: capitalize;
+    display: flex;
+}
+
+.home-icon {
+    font-size: 32px;
+    top: 1px;
+    left: 376px;
+    width: .7em;
+    color: #ffffff;
+    margin-right: .5em;
+}
+
+.explore-icon {
+    font-size: 32px;
+    top: 1px;
+    left: 376px;
+    width: .8em;
+    height: .8em;
+    color: #ffffff;
+    margin-right: .5em;
+}
+
+.getto-icon {
+    font-size: 32px;
+    top: 1px;
+    left: 376px;
+    width: .7em;
+    height: .8em;
+    color: #ffffff;
+    margin-right: .5em;
+}
+
+.accom-icon {
+    font-size: 32px;
+    top: 1px;
+    left: 376px;
+    width: .7em;
+    height: .8em;
+    color: #ffffff;
+    margin-right: .5em;
+}
+
+.act-icon {
+    font-size: 32px;
+    top: 1px;
+    left: 376px;
+    width: .6em;
+    height: .8em;
+    color: #ffffff;
+    margin-right: .5em;
+}
+
+.rest-icon {
+    font-size: 32px;
+    top: 1px;
+    left: 376px;
+    width: .6em;
+    height: 59px;
+    color: #ffffff;
+    margin-right: .5em;
+}
+
+.faq-icon {
+    font-size: 32px;
+    top: 1px;
+    left: 376px;
+    width: .7em;
+    color: #ffffff;
+    margin-right: .5em;
+}
+
+.contact-icon {
+    font-size: 2em;
+    top: 1px;
+    left: 376px;
+    width: .7em;
+    color: #ffffff;
+    margin-right: .5em;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #818181;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+    transition: height 1s, background-color 1s;
+    box-shadow: 3px 4px 8px rgba(3,3,3,0.4);
+}
+
+.scrolled {
+    height: 60px;
+    background-color: #030303;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    background-color: #cecece;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: 20px;
+}
+
+.contact-form {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.input-container textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Khand';
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.contact-info {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(../images/contact-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.name, .phone, .email, .address {
+    width: 295px;
+    height: auto;
+    padding: 0 8px;
+    border: 0;
+    border-radius: 10px;
+    background-color: white;
+    margin: 1em;
+    box-shadow: 0px 0px 10px rgba(3,3,3,0.8);
+    outline: none;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+
+
+
+
+.footer-container {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d7d7d7;
+}
+
+.taniti-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+h2, p {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-list-items {
+    color: black;
+    list-style-type: none;
+    text-align: right;
+}
+
+#footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#footer-links {
+    color: black;
+    text-align: right;
+    margin-right: 1em;
+}
