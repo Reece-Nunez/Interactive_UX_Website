@@ -25,7 +25,7 @@ ul {
     justify-content: space-evenly;
 }
 
-a {
+.nav-bar a {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.5em;
@@ -209,6 +209,11 @@ p {
     top: 90px;
 }
 
+.natural-adventure-images-container a {
+    text-decoration: none;
+    color: black;
+}
+
 .snorkel {
     background-image: url(../images/snorkel.jpg);
 }
@@ -369,6 +374,27 @@ p {
     cursor: pointer;
 }
 
+h1 {
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 10px;
+    font-size: 72px;
+}
+
+header {
+    background-color: #818181;
+    height: 12em;
+}
+
+.detial-card {
+    margin: 2em;
+    padding: 2em;
+}
+
+.detail-card h1 {
+    font-size: 14px;
+}
+
 
 
 
@@ -408,4 +434,80 @@ h2, p {
     color: black;
     text-align: right;
     margin-right: 1em;
+}
+
+.booking-container {
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Khand', sans-serif;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin: 1.5em;
+}
+
+.booking-section {
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #f5f5f5;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 25px;
+    background-color: #333;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Khand';
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.fas {
+    padding: .5em;
+}
+
+.calendar div:hover {
+    background-color: #000000;
+    color: #FFF;
 }
