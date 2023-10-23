@@ -2,7 +2,7 @@ html, body {
     font-family: 'Khand', sans-serif;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #nav-bar-text:hover {
@@ -181,28 +181,32 @@ a {
 }
 
 .natural-adventure-images-container {
-    display:flex;
+    display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
-.snorkel-container, .fish-container, .zip-line-container, .volcano-container, .rainforest-container, .beach-container, .helicopter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1em;
-}
-
-
 
 .snorkel, .fish, .zip-line, .volcano, .rainforest, .beach, .helicopter {
     width: 350px;
     height: 350px;
-    margin: .5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2em;
     padding: 1em;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(3,3,3,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     font-size: 1.3em;
+    font-weight: normal;
+    text-align: center;
+}
+
+p {
+    position: relative;
+    top: 90px;
 }
 
 .snorkel {
@@ -236,10 +240,6 @@ a {
 .snorkel:hover, .fish:hover, .zip-line:hover, .volcano:hover, .rainforest:hover, .beach:hover, .helicopter:hover {
     box-shadow: 0px 0px 10px rgba(3,3,3,0.9);
     cursor: pointer;
-}
-
-p {
-    color: rgb(255, 255, 255);
 }
 
 .discover {
