@@ -1,3 +1,16 @@
+// Get the navbar element
+const navbar = document.querySelector('.nav-bar');
+
+// Function to toggle the "scrolled" class based on scroll position
+function toggleNavbar() {
+    if (window.scrollY > 100) { // Adjust the scroll position threshold as needed
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+}
+
+window.addEventListener('scroll', toggleNavbar);
 
 
 
@@ -118,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault(); // Prevent the default action (e.g. following the link)
 
         const locationValue = document.querySelector("#location1").value;
+        const activityValue = document.querySelector("#activity1").value;
         const durationValue = document.querySelector("#duration1").value;
         const groupSizeValue = document.querySelector("#group-size").value;
         const monthValue = document.querySelector("#month").value;
@@ -131,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             let alertMessage = `${fullNameValue} Your booking is confirmed with the following details:\n`;
             alertMessage += `Location: ${locationValue || "Not Specified"}\n`;
+            alertMessage += `Activity: ${activityValue || "Not Specified"}\n`;
             alertMessage += `Duration: ${durationValue || "Not Specified"} Hours\n`;
             alertMessage += `Group Size: ${groupSizeValue || "Not Specified"}\n`;
             alertMessage += `Month: ${monthValue || "Not Specified"}\n`;

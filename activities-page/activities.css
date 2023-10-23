@@ -5,6 +5,8 @@ html, body {
     overflow-x: hidden;
 }
 
+
+
 #nav-bar-text:hover {
     font-weight: 500;
     text-decoration: underline;
@@ -117,7 +119,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     background-color: #818181;
-    position: sticky !important;
+    position: sticky;
     top: 0;
     z-index: 1000;
     height: 80px;
@@ -361,7 +363,10 @@ p {
     border-radius: 10px;
     letter-spacing: 6px;
     line-height: 42px;
+}
 
+#book-button-link {
+    text-decoration: none;
 }
 
 #book-button:hover {
@@ -389,17 +394,18 @@ p {
 }
 
 
-h1 {
+#snorkeling-header {
     text-align: center;
     font-weight: 300;
     letter-spacing: 10px;
     font-size: 72px;
-    background-image: url(../images/snorkel-booking.jpg);
+    background-image: url(../images/booking.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0;
-    height: 400px;
+    height: 500px;
+    color: white;
 }
 
 .detial-card {
@@ -525,4 +531,8 @@ button:hover {
 .calendar-header {
     padding-top: 0;
     padding-bottom: 1em;
+}
+
+.btn-booking {
+    text-decoration: none;
 }
