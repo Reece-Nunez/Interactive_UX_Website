@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons/Taniti-logo-black.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="review.css">
+    <title>Review An Activity</title>
+</head>
+<body>
+    <body>
+        <div class="review-form-container">
+            <h2>Review Your Activity Package</h2>
+    
+            <form id="activityReviewForm">
+                <div class="input-group">
+                    <label for="packageName">Package Name:</label>
+                    <input type="text" id="packageName" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" required>
+                        <option value="5">5 - Excellent</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="3">3 - Good</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="1">1 - Poor</option>
+                    </select>
+                </div>
+    
+                <div class="input-group">
+                    <label for="reviewText">Your Review:</label>
+                    <textarea id="reviewText" rows="5" required></textarea>
+                </div>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <button type="submit">Submit Review</button>
+                    <a href="../activities-page/activities.html"><button type="button">Go Back</button></a>
+                </div>
+            </form>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+</body>
+</html>
