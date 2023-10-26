@@ -5,6 +5,8 @@ html, body {
     overflow-x: hidden;
 }
 
+
+
 #nav-bar-text:hover {
     font-weight: 500;
     text-decoration: underline;
@@ -117,7 +119,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     background-color: #818181;
-    position: sticky !important;
+    position: sticky;
     top: 0;
     z-index: 1000;
     height: 80px;
@@ -361,7 +363,10 @@ p {
     border-radius: 10px;
     letter-spacing: 6px;
     line-height: 42px;
+}
 
+#book-button-link {
+    text-decoration: none;
 }
 
 #book-button:hover {
@@ -373,30 +378,6 @@ p {
     border-radius: 10px;
     cursor: pointer;
 }
-
-h1 {
-    text-align: center;
-    font-weight: 300;
-    letter-spacing: 10px;
-    font-size: 72px;
-}
-
-header {
-    background-color: #818181;
-    height: 12em;
-}
-
-.detial-card {
-    margin: 2em;
-    padding: 2em;
-}
-
-.detail-card h1 {
-    font-size: 14px;
-}
-
-
-
 
 .footer-container {
     display: inline-flex;
@@ -410,6 +391,30 @@ header {
     display: flex;
     flex-direction: column;
     margin-left: 1em;
+}
+
+
+#snorkeling-header {
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 10px;
+    font-size: 72px;
+    background-image: url(../images/booking.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    height: 500px;
+    color: white;
+}
+
+.detial-card {
+    margin: 2em;
+    padding: 2em;
+}
+
+.detail-card h1 {
+    font-size: 14px;
 }
 
 h2, p {
@@ -437,31 +442,34 @@ h2, p {
 }
 
 .booking-container {
-    width: 400px;
+    width: auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     font-family: 'Khand', sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin: 2em auto;
 }
 
 select {
-    padding: 10px;
+    font-family: 'Khand';
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
     outline: none;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    margin: 1.5em;
 }
 
-.booking-section {
-    margin-bottom: 20px;
+
+input {
+    font-family: 'Khand';
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-h4 {
+h4{
     margin-top: 20px;
     margin-bottom: 10px;
     font-weight: 500;
@@ -471,7 +479,11 @@ h4 {
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
+
+}
+
+.price {
+    display: none;
 }
 
 button {
@@ -496,7 +508,31 @@ button:hover {
     padding: .5em;
 }
 
-.calendar div:hover {
+.calendar-item:hover {
     background-color: #000000;
     color: #FFF;
+}
+
+.calendar-item {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.calendar-item-day {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.adventure-section, .personal-section, .payment-section, .calendar-header, .time {
+    padding: 5em;
+}
+
+.calendar-header {
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
+.btn-booking {
+    text-decoration: none;
 }

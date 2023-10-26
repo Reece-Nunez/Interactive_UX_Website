@@ -1,3 +1,5 @@
+
+
 // Get the navbar element
 const navbar = document.querySelector('.nav-bar');
 
