@@ -257,6 +257,74 @@ a {
     justify-content: space-evenly;
 }
 
+h1 {
+    margin: .4em;
+    margin-top: 1em;
+    color: #030303;
+    font-size: 96px;
+    font-family: "Khand";
+    font-weight: 300;
+    letter-spacing: 18px;
+    line-height: 80px;
+}
+
+.reviews-container {
+    margin: 3em;
+    box-shadow: 0px 0px 10px rgba(3,3,3,0.6);
+}
+
+.inner-review-container {
+    display: flex;
+    width: 100%;
+}
+
+.natural-bar, .cultural-bar, .cuisine-bar, .accom-bar, .transpo-bar,
+.entertainment-bar, .safety-bar, .adventure-bar {
+    border: 1px solid black;
+    height: 10px;
+    width: 40%;
+    border-radius: 50px;
+    margin-left: 1em;
+}
+
+.cultural-bar, .cuisine-bar, .entertainment-bar {
+    background: linear-gradient(to left, #000 0%, #000 20%, transparent 20%, transparent 100%)
+}
+
+.accom-bar, .adventure-bar {
+    background: linear-gradient(to left, #000 0%, #000 10%, transparent 10%, transparent 100%)
+}
+
+.transpo-bar {
+    background: linear-gradient(to left, #000 0%, #000 50%, transparent 50%, transparent 100%)
+}
+
+.safety-bar {
+    background: linear-gradient(to left, #000 0%, #000 30%, transparent 30%, transparent 100%)
+}
+
+.natural, .cultural, .cuisine, .accom, .transportation,
+.entertainment, .safety, .adventure {
+    margin-left: 1em;
+}
+
+.review-bar {
+    padding-bottom: 1em;
+    width: 50%;
+}
+
+.reviews {
+    width: 50%;
+    margin: 2em;
+}
+
+.load-more-reviews {
+    margin-left: 50%;
+    font-size: 20px;
+    width: 7em;
+    cursor: pointer;
+}
+
 .local {
     margin: 1em;
     color: #030303;
