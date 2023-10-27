@@ -318,12 +318,12 @@ h1 {
     margin: 2em;
 }
 
-.load-more-reviews {
-    margin-left: 50%;
+.review-button, .load-more-reviews {
     font-size: 20px;
-    width: 7em;
+    width: 8em;
     cursor: pointer;
 }
+
 
 .local {
     margin: 1em;
